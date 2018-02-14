@@ -1,0 +1,18 @@
+package com.intuit.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+public class ReferrerCount
+{	
+		  private String answer;
+		  private Long   cnt;
+
+		  public SurveyAnswerStatistics(String answer, Long cnt) {
+		    this.answer = answer;
+		    this.count  = cnt;
+		  }
+		}
+}

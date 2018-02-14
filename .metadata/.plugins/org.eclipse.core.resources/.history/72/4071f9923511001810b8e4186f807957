@@ -1,0 +1,57 @@
+package com.ingenu.examples.dataserver.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ingenu.examples.dataserver.model.Message;
+import com.ingenu.examples.dataserver.service.MessageService;
+
+@Controller
+@RequestMapping("/")
+public class MessageController
+{
+	
+	@Autowired
+	MessageService service;
+
+	@RequestMapping(method = RequestMethod.GET)
+	public ModelAndView getAll(ModelMap model)
+	{
+		ModelAndView mv = new ModelAndView("welcome");
+		List<Message> list = service.findAll();
+		mv.addObject("title", "Messages");
+		mv.addObject("messages", list);
+		return mv;
+	}
+
+	@RequestMapping(value = "/node/{id}/messages", method = RequestMethod.GET)
+	public ModelAndView getAllForNode(ModelMap model, @PathVariable("id") String node)
+	{
+		ModelAndView mv = new ModelAndView("welcome");
+		long nodeId = Long.parseLong(node.replace("0x", ""), 16);
+		List<Message> list = service.findByNodeId(nodeId);
+		mv.addObject("title", "Messages");
+		mv.addObject("messages", list);
+		return mv;
+	}
+	
+	@RequestMapping(value = "/node/{id}/ping", method = RequestMethod.POST)
+	public void sendPing(ModelMap model, @PathVariable("id") String node)
+	{
+		try
+		{
+			service.sendPing(node);
+		} catch (Exception e)
+		{
+			throw new RuntimeException(e);
+		}
+	}
+
+}

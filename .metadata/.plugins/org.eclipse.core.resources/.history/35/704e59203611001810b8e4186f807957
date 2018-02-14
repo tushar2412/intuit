@@ -1,0 +1,16 @@
+package com.intuit.dao;
+
+import java.util.UUID;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ingenu.examples.dataserver.model.Message;
+
+@Repository
+public interface MessageDao extends CrudRepository<Message, UUID>
+{
+	Iterable<Message> findAllByOrderByTimestampDesc();
+	
+	Iterable<Message> findByNodeIdOrderByTimestampDesc(long nodeId);
+}

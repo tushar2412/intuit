@@ -1,0 +1,18 @@
+package com.intuit.dao;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.intuit.model.Referrer;
+
+@Repository
+public class ReferrerDaoImpl implements ReferrerDao
+{
+	 List l = em.createQuery(
+		        "SELECT d.name, AVG(e.salary) FROM Department d JOIN d.employees e " +
+		            "WHERE e.directs IS EMPTY " +
+		            "GROUP BY d.name " +
+		            "HAVING AVG(e.salary) > 50")
+		        .getResultList();
+	
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d %d{"Z"} [%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${user.dir}/logs/referred-service.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover. Make sure the path matches the one in the file element or else
+             the rollover logs are placed in the working directory. -->
+            <fileNamePattern>${user.dir}/logs/referred-service_%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+			<!-- Use this to log in UTC/GMT time zone -->
+			<!-- <pattern>%date{"yyyy-MM-dd'T'HH:mm:ss,SSSXXX", UTC} [%thread] %-5level %logger{35} - %msg%n</pattern> -->
+			<!-- Use this to log in Server time zone -->
+            <pattern>%d %d{"Z"} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="FILE" />
+		<queueSize>2048</queueSize>
+	</appender>
+
+	<root level="INFO">
+<!-- 		<appender-ref ref="STDOUT"/> -->
+		<appender-ref ref="FILE" />
+		<!-- uncomment the below line and comment out the above line to enable asynchronous logging -->
+<!-- 		<appender-ref ref="ASYNC" /> -->
+	</root>
+
+	<logger name="com.ingenu.examples.dataserver" level="INFO" />
+	<logger name="org.hibernate" level="ERROR" />
+	<logger name="org.springframework" level="ERROR" />
+	<logger name="org.apache.qpid" level="ERROR" />
+
+</configuration>

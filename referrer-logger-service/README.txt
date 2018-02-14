@@ -1,0 +1,32 @@
+
+Requirements
+    * Java JDK 1.8
+    * Maven 3.1.1 or later
+    * MySQL 5.5 or later
+
+
+Create MySQL Database
+1. run mysql command line client by running 'mysql -u{username} -p{password}'
+2. after the mysql client starts, type 'create database dataservice'
+3. type 'exit'
+
+Import MySQL Schema
+1. from command line, type mysql -u{username} -p{password} dataservice < src/main/resource/schema-mysql.sql
+
+Build Project:
+1. cd to the base directory of the project (where the pom.xml file is)
+2. run 'mvn clean install' to build the project
+3. verify that a 'target' directory has been created
+
+Configure Properties:
+
+1. configure Application.properties to match MySQL database settings
+
+Run Project:
+1. run 'java -jar target/referrer-logger-1.4.2.RELEASE.jar'
+
+Verification:
+1. open a web browser and enter 'http://localhost:8080' and press enter
+2. verify the web page is displayed
+
+

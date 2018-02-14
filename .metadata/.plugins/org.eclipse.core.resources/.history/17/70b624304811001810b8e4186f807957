@@ -1,0 +1,36 @@
+package com.intuit.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.intuit.service.MessageDao;
+import com.intuit.model.Message;
+
+@Service
+@Transactional
+public class MessageService
+{
+
+	@Autowired
+	MessageDao dao;
+
+	public List<Message> findAll()
+	{
+		return (List<Message>) dao.findAllByOrderByTimestampDesc();
+	}
+
+	public List<Message> findByNodeId(long nodeId)
+	{
+		return (List<Message>) dao.findByNodeIdOrderByTimestampDesc(nodeId);
+	}
+
+	public void sendPing(String nodeId) throws JsonProcessingException
+	{
+		
+	}
+
+}

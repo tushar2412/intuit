@@ -1,0 +1,21 @@
+package com.intuit;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
+
+@Configuration
+public class Jaxb
+{
+
+	@Bean
+	public Jaxb2Marshaller marshaller() throws Exception
+	{
+		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+		marshaller.setContextPaths("com.ingenu.examples.dataservice");
+		marshaller.setLazyInit(false);
+		marshaller.afterPropertiesSet();
+		return marshaller;
+	}
+
+}

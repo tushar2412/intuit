@@ -1,0 +1,11 @@
+package com.intuit.service;
+
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.intuit.model.SystemVariable;
+
+public interface SystemVariableDao extends CrudRepository<SystemVariable, String>
+{
+
+}

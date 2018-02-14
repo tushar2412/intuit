@@ -1,0 +1,16 @@
+package com.intuit.dao;
+
+import java.util.UUID;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.intuit.model.Referrer;
+
+@Repository
+public interface ReferrerDao extends CrudRepository<Referrer, Long>
+{
+	Iterable<Referrer> findAllByOrderByTimestampDesc();
+	
+
+}

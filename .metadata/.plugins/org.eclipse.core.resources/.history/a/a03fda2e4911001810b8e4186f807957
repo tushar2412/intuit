@@ -1,0 +1,76 @@
+package com.intuit;
+
+import java.util.Properties;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+
+@Configuration
+@EnableJpaRepositories("com.ingenu.examples.dataserver")
+public class Jpa
+{
+
+	@Autowired
+	DataSource dataSource;
+
+	@Autowired
+	ResourceLoader resourceLoader;
+
+	@Autowired(required = false)
+	@Qualifier("dataSourceHibernateProperties")
+	Properties dataSourceHibernateProperties;
+
+	@Bean
+	public Properties hibernateProperties()
+	{
+		Properties p = new Properties();
+		p.put("hibernate.connection.autocommit", false);
+		if (dataSourceHibernateProperties != null)
+		{
+			p.putAll(dataSourceHibernateProperties);
+		}
+		return p;
+	}
+
+	@Bean
+	public HibernateJpaSessionFactoryBean sessionFactory()
+	{
+		return new HibernateJpaSessionFactoryBean();
+	}
+
+	@Bean
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory()
+	{
+		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
+		emf.setDataSource(dataSource);
+		emf.setPackagesToScan("com.intuit.model");
+		emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+		emf.setJpaProperties(hibernateProperties());
+		return emf;
+	}
+
+	@Bean
+	public PlatformTransactionManager transactionManager()
+	{
+		return new JpaTransactionManager(entityManagerFactory().getObject());
+	}
+
+	@Bean
+	public PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor()
+	{
+		return new PersistenceExceptionTranslationPostProcessor();
+	}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.130
+C:\study\intuit\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\73637396.index
+\referrer-logger-service\src\main\java

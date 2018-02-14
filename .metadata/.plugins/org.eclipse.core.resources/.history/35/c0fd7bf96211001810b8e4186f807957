@@ -1,0 +1,82 @@
+package com.intuit.model;
+
+import java.io.UnsupportedEncodingException;
+import java.util.Date;
+import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Entity
+@Table(name = "Referer")
+public class Referer
+{
+
+	private String domain;
+	private long timestamp;
+
+	@Column(name = "domain")
+	public String getDomain() {
+		return domain;
+	}
+
+	public void setDomain(String domain) {
+		this.domain = domain;
+	}
+
+	@Column(name = "timestamp")
+	public long getTimestamp()
+	{
+		return timestamp;
+	}
+
+	public void setTimestamp(long timestamp)
+	{
+		this.timestamp = timestamp;
+	}
+
+	
+
+
+	
+	@Transient
+	public String getTimestampFormatted()
+	{
+		return new Date(this.getTimestamp()).toString();
+	}
+
+	@Override
+	public int hashCode()
+	{
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((domain == null) ? 0 : domain.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Message))
+			return false;
+		Message other = (Message) obj;
+		if (domain == null)
+		{
+			if (other.domain != null)
+				return false;
+		} else if (!domain.equals(other.domain))
+			return false;
+		return true;
+	}
+
+}

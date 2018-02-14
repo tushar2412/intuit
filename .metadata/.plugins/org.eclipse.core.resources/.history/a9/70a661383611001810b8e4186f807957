@@ -1,0 +1,61 @@
+package com.intuit.service;
+
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ingenu.examples.dataserver.adapter.EndpointAdapter;
+import com.ingenu.examples.dataserver.dao.MessageDao;
+import com.ingenu.examples.dataserver.model.Message;
+import com.ingenu.examples.dataserver.model.Message.Direction;
+import com.ingenu.examples.dataservice.Downlink;
+import com.ingenu.examples.dataservice.NodeEchoRequest;
+
+@Service
+@Transactional
+public class MessageService
+{
+
+	@Autowired
+	MessageDao dao;
+
+	@Autowired
+	EndpointAdapter<?> endpoint;
+
+	public List<Message> findAll()
+	{
+		return (List<Message>) dao.findAllByOrderByTimestampDesc();
+	}
+
+	public List<Message> findByNodeId(long nodeId)
+	{
+		return (List<Message>) dao.findByNodeIdOrderByTimestampDesc(nodeId);
+	}
+
+	public void sendPing(String nodeId) throws JsonProcessingException
+	{
+		NodeEchoRequest request = new NodeEchoRequest();
+		request.setNodeId(nodeId);
+
+		Downlink downlink = new Downlink();
+		downlink.setNodeEchoRequest(request);
+
+		Message entity = new Message();
+		entity.setId(UUID.randomUUID());
+		entity.setType(NodeEchoRequest.class.getSimpleName());
+		entity.setDirection(Direction.DOWNLINK);
+		entity.setNodeId(nodeId != null ? Long.parseLong(((String) nodeId).replace("0x", ""), 16) : null);
+		byte[] payload = new ObjectMapper().writeValueAsBytes(request);
+		entity.setPayload(payload);
+		entity.setTimestamp(System.currentTimeMillis());
+		dao.save(entity);
+
+		endpoint.send(downlink);
+	}
+
+}
