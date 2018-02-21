@@ -1,0 +1,23 @@
+package com.intuit.controller;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.springframework.web.servlet.ModelAndView;
+
+public class MessageControllerTest {
+
+	@Test
+	public void testGetAll() {
+		MessageController c= new MessageController();
+	       ModelAndView mav= c.getAll();
+	       Assert.assertEquals("hello", mav.getViewName());
+	}
+
+	@Test
+	public void testCreateReferrer() {
+		fail("Not yet implemented");
+	}
+
+}

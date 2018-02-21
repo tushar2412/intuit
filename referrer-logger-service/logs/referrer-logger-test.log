@@ -1,0 +1,494 @@
+2018-02-20 16:51:05,369 -0800 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Table "Referrer" not found; SQL statement:
+select referrer0_.domain as col_0_0_, count(referrer0_.id) as col_1_0_ from Referrer referrer0_ group by referrer0_.domain order by count(referrer0_.id) DESC [42102-190]
+2018-02-20 16:54:29,403 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 16:54:30,005 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 16:54:30,076 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 16:54:30,078 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-20 16:54:30,079 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 16:54:30,120 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 16:54:30,384 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 16:54:31,232 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 16:54:32,955 -0800 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 42102, SQLState: 42S02
+2018-02-20 16:54:32,956 -0800 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Table "Referrer" not found; SQL statement:
+select referrer0_.domain as col_0_0_, count(referrer0_.id) as col_1_0_ from Referrer referrer0_ group by referrer0_.domain order by count(referrer0_.id) DESC [42102-190]
+2018-02-20 16:55:34,044 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 16:55:34,622 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 16:55:34,703 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 16:55:34,706 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 16:55:34,707 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 16:55:34,760 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 16:55:35,148 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 16:55:35,734 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 16:55:35,740 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 16:55:36,036 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:07:53,051 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:07:53,582 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:07:53,666 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:07:53,669 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:07:53,669 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:07:53,720 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:07:54,035 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:07:54,641 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:07:54,646 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:07:55,003 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:08:53,677 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:08:54,273 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:08:54,339 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:08:54,341 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:08:54,342 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:08:54,385 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:08:54,658 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:08:55,210 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:08:55,216 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:08:55,527 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:10:03,548 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:10:04,160 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:10:04,238 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:10:04,240 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:10:04,241 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:10:04,285 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:10:04,567 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:10:05,117 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:10:05,122 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:10:05,421 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:10:44,667 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:10:45,409 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:10:45,512 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:10:45,515 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:10:45,517 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:10:45,571 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:10:45,972 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:10:46,704 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:10:46,713 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:10:47,141 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:11:47,481 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:11:48,122 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:11:48,210 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:11:48,212 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:11:48,213 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:11:48,259 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:11:48,582 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:11:49,212 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:11:49,218 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:11:49,577 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:18:56,269 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:18:56,871 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:18:56,949 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:18:56,951 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:18:56,951 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:18:56,998 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:18:57,261 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:18:57,806 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:18:57,811 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:18:58,103 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:21:15,902 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:21:16,504 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:21:16,595 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:21:16,598 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:21:16,599 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:21:16,650 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:21:16,916 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:21:17,470 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:21:17,475 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:21:17,773 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:22:21,887 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:22:22,519 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:22:22,607 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:22:22,609 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:22:22,609 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:22:22,652 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:22:22,961 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:22:23,662 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:22:23,668 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:22:24,056 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:23:37,707 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:23:38,365 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:23:38,455 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:23:38,459 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:23:38,460 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:23:38,506 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:23:38,842 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:23:39,502 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:23:39,507 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:23:39,861 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:29:03,361 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:29:04,007 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:29:04,106 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:29:04,110 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:29:04,111 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:29:04,170 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:29:04,506 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:29:05,246 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:29:05,255 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:29:05,691 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:29:09,815 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:29:10,610 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:29:10,692 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:29:10,695 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:29:10,696 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:29:10,748 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:29:11,091 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:29:11,753 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:29:11,759 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:29:12,127 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:32:17,541 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:32:18,116 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:32:18,200 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:32:18,202 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:32:18,203 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:32:18,253 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:32:18,542 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:32:19,094 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:32:19,100 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:32:19,423 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:53:13,861 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:53:14,512 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:53:14,591 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:53:14,593 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:53:14,594 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:53:14,637 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:53:14,933 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:53:15,509 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:53:15,514 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:53:15,860 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:54:10,665 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:54:11,376 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:54:11,467 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:54:11,469 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:54:11,470 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:54:11,524 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:54:11,832 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:54:12,482 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:54:12,488 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:54:12,858 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:56:33,820 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:56:34,438 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:56:34,531 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:56:34,535 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:56:34,536 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:56:34,584 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:56:34,916 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:56:35,564 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:56:35,569 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:56:35,939 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:58:07,866 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:58:08,527 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:58:08,621 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:58:08,624 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:58:08,624 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:58:08,679 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:58:09,029 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:58:09,754 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:58:09,761 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:58:10,193 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:58:48,342 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:58:48,942 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:58:49,021 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:58:49,023 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:58:49,024 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:58:49,069 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:58:49,352 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:58:49,889 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:58:49,894 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:58:50,199 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 17:58:59,440 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 17:59:00,019 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 17:59:00,106 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 17:59:00,108 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 17:59:00,109 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 17:59:00,157 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 17:59:00,474 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 17:59:01,140 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 17:59:01,146 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 17:59:01,506 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:03:11,516 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:03:12,236 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:03:12,333 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:03:12,336 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:03:12,337 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:03:12,397 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:03:12,713 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:03:13,441 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:03:13,447 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:03:13,864 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:06:15,515 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:06:16,147 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:06:16,230 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:06:16,234 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:06:16,234 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:06:16,290 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:06:16,604 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:06:17,234 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:06:17,241 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:06:17,604 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:07:59,056 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:07:59,764 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:07:59,867 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:07:59,870 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:07:59,870 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:07:59,918 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:08:00,293 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:08:00,961 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:08:00,968 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:08:01,360 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:18:45,201 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:18:45,840 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:18:45,933 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:18:45,935 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:18:45,936 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:18:45,986 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:18:46,322 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:18:46,965 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:18:46,971 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:18:47,318 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:19:38,290 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:19:38,841 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:19:38,919 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:19:38,922 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:19:38,923 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:19:38,959 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:19:39,236 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:19:39,770 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:19:39,775 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:19:40,068 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:19:51,091 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:19:51,706 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:19:51,795 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:19:51,798 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:19:51,799 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:19:51,851 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:19:52,172 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:19:52,807 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:19:52,813 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:19:53,205 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:20:52,107 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:20:52,834 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:20:52,922 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:20:52,925 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:20:52,925 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:20:52,972 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:20:53,285 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:20:53,934 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:20:53,940 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:20:54,285 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:22:56,889 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:22:57,494 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:22:57,575 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:22:57,578 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:22:57,578 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:22:57,623 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:22:57,954 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:22:58,587 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:22:58,593 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:22:58,929 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:23:07,535 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:23:08,219 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:23:08,307 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:23:08,309 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:23:08,310 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:23:08,360 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:23:08,699 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:23:09,395 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:23:09,402 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:23:09,785 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 18:27:23,947 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 18:27:24,685 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 18:27:24,781 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 18:27:24,783 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 18:27:24,784 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 18:27:24,836 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 18:27:25,186 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 18:27:25,837 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 18:27:25,842 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 18:27:26,249 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:00:12,187 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:00:12,939 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:00:13,030 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:00:13,034 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:00:13,035 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:00:13,094 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:00:13,444 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:00:14,138 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:00:14,145 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:00:14,546 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:03:29,508 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:03:30,191 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:03:30,283 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:03:30,285 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:03:30,286 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:03:30,341 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:03:30,695 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:03:31,403 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:03:31,409 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:03:31,818 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:04:51,561 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:04:52,279 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:04:52,388 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:04:52,391 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:04:52,392 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:04:52,451 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:04:52,846 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:04:53,511 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:04:53,516 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:04:53,922 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:17:27,127 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:17:27,841 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:17:27,943 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:17:27,946 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:17:27,946 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:17:27,995 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:17:28,378 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:17:29,086 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:17:29,093 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:17:29,519 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:20:10,555 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:20:11,194 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:20:11,280 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:20:11,282 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:20:11,283 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:20:11,328 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:20:11,653 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:20:12,327 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:20:12,333 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:20:12,708 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:20:27,893 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:20:28,567 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:20:28,647 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:20:28,650 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:20:28,650 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:20:28,702 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:20:29,020 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:20:29,701 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:20:29,707 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:20:30,084 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:20:57,513 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:20:58,162 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:20:58,243 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:20:58,245 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:20:58,246 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:20:58,293 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:20:58,624 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:20:59,299 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:20:59,306 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:20:59,688 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:21:18,443 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:21:19,130 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:21:19,223 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:21:19,226 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:21:19,227 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:21:19,273 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:21:19,590 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:21:20,240 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:21:20,246 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:21:20,618 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:21:50,073 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:21:50,709 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:21:50,794 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:21:50,797 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:21:50,797 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:21:50,847 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:21:51,163 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:21:51,828 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:21:51,834 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:21:52,189 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-20 19:24:13,000 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:24:13,690 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:24:13,775 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:24:13,777 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:24:13,778 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:24:13,827 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:24:14,140 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:24:14,831 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:24:14,837 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:24:45,453 -0800 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-20 19:24:46,111 -0800 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-20 19:24:46,199 -0800 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-20 19:24:46,201 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.hbm2ddl.auto=create}
+2018-02-20 19:24:46,201 -0800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-20 19:24:46,253 -0800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-20 19:24:46,559 -0800 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-02-20 19:24:47,225 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+2018-02-20 19:24:47,230 -0800 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+2018-02-20 19:24:47,610 -0800 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory

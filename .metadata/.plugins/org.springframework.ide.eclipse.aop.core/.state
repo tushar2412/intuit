@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="referring-service-1"/>
+<aop-project name="referring-service-2"/>
+<aop-project name="referring-service-4"/>
+<aop-project name="referring-service-3"/>
+<aop-project name="referred-service"/>
+<aop-project name="referrer-logger-service"/>
+</aop-reference-model>

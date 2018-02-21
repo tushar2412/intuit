@@ -1,0 +1,21 @@
+package com.intuit.controller;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MessageControllerTest {
+
+	@Test
+	public void testGetAll() {
+		MessageController c= new MessageController();
+	       ModelAndView mav= c.getAll(model);
+	       Assert.assertEquals("hello", mav.getViewName());
+	}
+
+	@Test
+	public void testCreateReferrer() {
+		fail("Not yet implemented");
+	}
+
+}

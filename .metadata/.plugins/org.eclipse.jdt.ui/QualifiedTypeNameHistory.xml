@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.intuit.model.Message.Direction"/>
+<fullyQualifiedTypeName name="com.intuit.service.MessageService"/>
+<fullyQualifiedTypeName name="com.intuit.model.Message"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="com.intuit.dao.ReferrerDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.intuit.model.Referrer"/>
+<fullyQualifiedTypeName name="com.intuit.model.ReferrerCount"/>
+</qualifiedTypeNameHistroy>

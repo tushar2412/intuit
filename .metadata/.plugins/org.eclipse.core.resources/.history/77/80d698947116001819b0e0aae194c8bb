@@ -1,0 +1,19 @@
+package com.intuit.controller;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MessageControllerTest {
+
+	@Test
+	public void testGetAll() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGreeting() {
+		fail("Not yet implemented");
+	}
+
+}

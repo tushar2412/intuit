@@ -1,0 +1,52 @@
+package com.intuit.controller;
+
+import static org.junit.Assert.fail;
+
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.intuit.model.ReferrerCount;
+import com.intuit.service.ReferrerService;
+
+@RunWith(MockitoJUnitRunner.class)
+public class MessageControllerTest {
+	
+	@InjectMocks
+    private MessageController messageController = new MessageController();
+	
+	 @Mock
+	 private ReferrerService referrerService;
+	 
+	 private MockMvc mockMvc;
+
+	@Test
+	public void testGetAll() {
+		//MessageController cMessageController= new MessageController();
+	       ModelAndView mav= messageController.getAll();
+	       
+	       Map<String, Object> map=mav.getModel();
+	       Assert.assertEquals(map.get("title"), "Referrercounts");
+	       
+	       List<ReferrerCount> list = (List<ReferrerCount>) map.get("referrerCounts");
+
+	       Assert.assertEquals(list.size(), 3);
+	}
+
+
+	@Test
+	public void testCreateReferrer() {
+		fail("Not yet implemented");
+	}
+
+}

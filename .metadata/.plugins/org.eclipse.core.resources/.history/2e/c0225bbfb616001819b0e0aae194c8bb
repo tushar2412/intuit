@@ -1,0 +1,42 @@
+package com.intuit.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.intuit.model.ReferrerCount;
+import com.intuit.service.ReferrerService;
+
+@Controller
+@RequestMapping("/")
+public class MessageController {
+
+	@Autowired
+	ReferrerService service;
+
+	@RequestMapping(method = RequestMethod.GET)
+	public ModelAndView getAll() {
+		ModelAndView mv = new ModelAndView("welcome");
+
+		List<ReferrerCount> list = service.findTop3Referrars();
+		mv.addObject("title", "Referrercounts");
+		mv.addObject("referrerCounts", list);
+		return mv;
+	}
+
+	@RequestMapping(value = "/referrer", method = RequestMethod.POST, consumes = "application/json")
+	public void createReferrer(HttpServletRequest request,
+            HttpServletResponse response, ModelMap model) throws Exception {
+		String jsonString = request.getParameter("json");
+		}
+	}
+
+}

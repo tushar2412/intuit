@@ -1,0 +1,15 @@
+# PROFILES {production, development, test}
+spring.profiles.active = test
+      
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:dataservice;MODE=MYSQL;INIT=CREATE SCHEMA IF NOT EXISTS dataservice
+spring.datasource.username=root
+spring.datasource.password=onramp
+
+# Show or not log for each sql query
+spring.jpa.generate-ddl= true
+spring.jpa.hibernate.ddl-auto=update
+
+
+#LOG FILE
+logging.config=${user.dir}/config/logback.xml

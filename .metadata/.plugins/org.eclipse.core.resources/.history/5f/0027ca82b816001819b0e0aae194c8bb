@@ -1,0 +1,7 @@
+INSERT INTO Referrer (id, domain, timestamp)
+VALUES
+  (1, 'domain1', 123456789),
+  (2, 'domain2', 123456790),
+  (3, 'domain3', 123456791)
+  ON DUPLICATE KEY UPDATE
+  id = id;

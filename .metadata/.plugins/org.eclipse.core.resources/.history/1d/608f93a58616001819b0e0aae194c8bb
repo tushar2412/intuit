@@ -1,0 +1,45 @@
+package com.intuit.controller;
+
+import static org.junit.Assert.fail;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.intuit.service.ReferrerService;
+
+@RunWith(MockitoJUnitRunner.class)
+public class MessageControllerTest {
+	
+
+	
+	 @Autowired
+	 private ReferrerService referrerServiceMock;
+	 
+	 private MockMvc mockMvc;
+
+	@Test
+	public void testGetAll() throws Exception {
+		
+		
+		when(referrerServiceMock.findTop3Referrars()).thenReturn(new ArrayList<>());
+	
+			mockMvc.perform(get("/")).andExpect(status().isOk());
+		
+	       
+	}
+
+
+	@Test
+	public void testCreateReferrer() {
+		fail("Not yet implemented");
+	}
+
+}
